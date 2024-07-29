@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resonsive Calculator</title>
+</head>
+<body>
+    <div class ="container">
+        <div class = "display">
+            <div class="upperLine"><p class="operation"> </p><p class="previousNumber"> </p></div>
+            <p class="mainNumber">0</p>
+        </div>
+
+        <div class="operationsButtons">
+            <div class="buttonOperation mul">x</div>
+            <div class="buttonOperation div">÷</div>
+            <div class="buttonOperation sub">-</div>
+            <div class="buttonOperation add">+</div>
+        </div>
+        
+        <div class ="numberButtons">
+            <div class="buttonNumber one" onclick = DisplayMainNumberEditor(1)>1</div>
+            <div class="buttonNumber two" onclick = DisplayMainNumberEditor(2)>2</div>
+            <div class="buttonNumber three" onclick = DisplayMainNumberEditor(3)>3</div>
+            <div class="buttonNumber four" onclick = DisplayMainNumberEditor(4)>4</div>
+            <div class="buttonNumber five" onclick = DisplayMainNumberEditor(5)>5</div>
+            <div class="buttonNumber six" onclick = DisplayMainNumberEditor(6)>6</div>
+            <div class="buttonNumber seven" onclick = DisplayMainNumberEditor(7)>7</div>
+            <div class="buttonNumber eight" onclick = DisplayMainNumberEditor(8)>8</div>
+            <div class="buttonNumber nine" onclick = DisplayMainNumberEditor(9)>9</div>
+            <div class="buttonNumber clear" onclick = Clear()>C</div>
+            <div class="buttonNumber zero" onclick = DisplayMainNumberEditor(0)>0</div>
+            <div class="buttonNumber result" onclick = ResultFinder();>=</div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

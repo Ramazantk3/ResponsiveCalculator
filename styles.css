@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: #ffbc03;
+}
+
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
+.container{
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #6b3400ff;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.display{
+    background-color: #000027;
+    color: white;
+    margin: auto;
+    text-align: end;
+    padding: 1rem 1rem 1rem 1rem;
+    min-height: 8rem;
+    max-width: 99%;
+}
+
+.upperLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mainNumber{
+    font-size: 2.8rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.previousNumber{
+    font-size: 2rem;
+    color: #c9c9c9a6;
+}
+
+.operation{
+    font-size: 2rem;
+}
+
+.operationsButtons{
+    margin: auto;
+    display:flex;
+    gap: .7rem;
+    justify-content: center;
+    margin-top: 1rem;
+    max-width: 90%;
+}
+
+.buttonOperation, .buttonNumber{
+    background-color: white;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.buttonOperation, .buttonNumber, .display{
+-webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.buttonOperation:active, .buttonNumber:active{
+    background-color: rgb(148, 78, 13);
+}
+
+.clear:active{
+    background-color: #ff2525;
+}
+.buttonOperation{
+    padding: 2rem;
+    flex-grow:1;
+}
+.numberButtons{
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    max-width: 80%;
+    gap: .7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttonNumber{
+    padding: 2rem;
+}
+ .clear{
+    background-color:#ff0000;
+ }
